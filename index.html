@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+
+function makevisible(){
+    himgp1 = document.getElementById("himgp1");
+
+
+
+    himgp1.style.visibility = "visible";
+    himgp1.style.display = "flex";
+
+    
+}
+function makeinvisible(){
+    himgp1 = document.getElementById("himgp1");
+
+    himgp1.style.visibility = "hidden";
+    himgp1.style.display = "none";
+
+    
+}
+
+function makevisible2(){
+    himgp1 = document.getElementById("himgp2");
+
+
+
+    himgp1.style.visibility = "visible";
+    himgp1.style.display = "flex";
+
+    
+}
+function makeinvisible2(){
+    himgp1 = document.getElementById("himgp2");
+
+    himgp1.style.visibility = "hidden";
+    himgp1.style.display = "none";
+
+    
+}
+        
+    const slideContainer = document.querySelector('.carousel-slide');
+    const slides = document.querySelectorAll('.carousel-slide img');
+    let currentIndex = 0;
+
+    function updateSlidePosition() {
+      const slideWidth = slides[0].clientWidth;
+      slideContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateSlidePosition();
+    }
+
+    function prevSlide() {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = slides.length - 1;
+      }
+      updateSlidePosition();
+    }
+
+    
+    window.addEventListener('resize', updateSlidePosition);
+  </script>
+
+    <div class="firstwhitediv">
+        <div class="imagediv">
+            <div class="header">
+                <div class="menus">
+                    <a href="house.html"><p class="menu">HOUSE</p> </a> 
+                    <a href="apartment.html"><p class="menu">APARTMENT</p> </a>                                                                                      </p>
+                    <a href="contact.html"><p class="menu">CONTACT</p> </a>                                                                                      </p>
+                                                                                                       </p>
+                    
+                </div>
+                <div class="blank"></div>
+                <div class="logo">
+                    <a href="index.html"><img src="./files/logo-les-roses-du-vercors-blanc-sans-baseline.svg" alt=""></a>
+                </div>
+                <div class="blank"></div>
+                <div class="contact">+91 9745914832</div>  
+                <div class="buttondiv">
+                    <button class="rbtn">RESERVE</button>
+                </div>  
+            </div>
+            <div class="mnhd">
+                <h1 class="mnhding">The Roses of Vercors
+                </h1>
+                <img class="rose" src="./files/separateur-rose-blanc.svg">
+                    <h1 class="mnhding">Accommodations in Villard-de-Lans</h1>
+            </div>
+        </div>
+    </div>
+    <div class="accdiv">
+        <p class="acctexts one">ACCOMMODATIONS</p>
+        <h1 class="acchd">Stay in the heart of Vercors</h1>
+        <p class="acctexts two">Denise and Tim welcome you to their Villard-de-Lans accommodation in<br>the Vercors massif. With family or friends, you live in the heart of the<br>village, in a cozy apartment or close to the cross-country ski slopes, in a<br>spacious house.</p>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="./files/slider1.jpg" alt="Slide 1">
+          <img src="./files/slider2.jpg" alt="Slide 2">
+          <img src="./files/slider3.jpg" alt="Slide 3">
+          <img src="./files/slider4.jpg" alt="Slide 4">
+          
+          <!-- <img src="./files/slider5.jpg" alt="Slide 4">
+          <img src="./files/slider6.jpg" alt="Slide 4"> -->
+
+          
+          
+        </div>
+            <button class="carousel-button left" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button right" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+      
+
+      
+
+
+      <div class="himgctr">
+        <div class="himg one" onmouseover="makevisible()" onmouseleave="makeinvisible()">
+          <h2 class="himgtxt">The House <br> wood Bearded</h2>
+          <p id="himgp1" class="himgp">Located near the snow front of the cross-country ski resort,<br>
+            the house can accommodate up to 12 people.</p>
+        </div>
+        <div class="himg two" onmouseover="makevisible2()" onmouseleave="makeinvisible2()">
+          <h2 class="himgtxt">The Apartment <br>In Villard-de-Lans</h2>
+          <p id="himgp2" class="himgp">Located near the snow front of the cross-country ski resort,<br>
+            the house can accommodate up to 12 people.</p>
+        </div>
+      </div>
+
+      <div class="accdiv">
+        <p class="acctexts one">EQUIPMENT & SERVICES</p>
+        <h1 class="acchd">Enjoy a comfortable rental</h1>
+        <p class="acctexts two">Our accommodations are designed to offer optimal comfort and to meet<br>all your needs. Discover our facilities and services included to make your<br>stay pleasant and worry-free. Whether for relaxation, practicality or<br>comfort, we have thought of everything to guarantee you a memorable <br> experience.</p>
+    </div>
+
+    <div class="features">
+      <div class="cards">
+        <img class="cardimg" src="files/f1.png" alt="">
+        <h3 class="cardhd">WiFi</h3>
+        <p class="cardp">Enjoy free and fast WiFi to stay connected during your stay.</p>
+      </div>
+      <div class="cards">
+        <img class="cardimg" src="files/f2.png" alt="">
+        <h3 class="cardhd">Private parking</h3>
+        <p class="cardp">Park your vehicle safely with our free private parking, in the immediate vicinity of your accommodation.</p>
+      </div>
+      <div class="cards">
+        <img class="cardimg" src="files/f3.png" alt="">
+        <h3 class="cardhd">Outdoor space</h3>
+        <p class="cardp">Relax in our outdoor area furnished with garden and terrace for moments of conviviality.</p>
+      </div>
+      <div class="cards">
+        <img class="cardimg" src="files/f4.png" alt="">
+        <h3 class="cardhd">Linen for house</h3>
+        <p class="cardp">All linens are provided for your comfort, including bed linen, towels and bed linen.</p>
+      </div>
+      <div class="cards">
+        <img class="cardimg" src="files/f5.png" alt="">
+        <h3 class="cardhd">Non-smoker</h3>
+        <p class="cardp">Our establishment is completely non-smoking, guaranteeing a clean and healthy environment.</p>
+      </div>
+      <div class="cards">
+        <img class="cardimg" src="files/f6.png" alt="">
+        <h3 class="cardhd">Extra services</h3>
+        <p class="cardp">Improve your stay with our additional services : breakfast basket, catering and cleaning on request.</p>
+      </div>
+    </div>
+
+    <div class="firstwhitediv2">
+      <div class="greendiv">
+      <div class="locdiv">
+        <div class="mapdiv"><img class="mapimg" src="./files/map.png"></div>
+        <div class="textsdiv">
+          <p class="lp">FINDING US</p>
+          <h1 class="lhd">In the Vercors natural park</h1>
+          <br><br>
+          <p class="lp2">Our accommodations are designed to offer optimal comfort and to meet all your needs. Discover our facilities and services included to make your stay pleasant and worry-free. Whether for relaxation, practicality or comfort, we have thought of everything to guarantee you a memorable experience.</p>
+          <br><br>
+
+          <button class="lcubtn">Contact Us</button>
+        </div>
+      </div>
+      <div class="isdiv">
+        <div class="imgsectiondiv">
+          <div class="imgsections">
+            <img class="imgs topimgs" src="./files/imgsection/topimg1.jpg">
+          </div>
+          <div class="imgsections">
+            <img class="imgs botimgs" src="./files/imgsection/botimg1.jpg">
+          </div>
+          <div class="imgsections">
+            <img class="imgs topimgs" src="./files/imgsection/topimg2.jpg">
+          </div>
+          <div class="imgsections">
+            <img class="imgs botimgs" src="./files/imgsection/botimg2.jpg">
+          </div>
+
+        </div>
+      </div>
+
+      
+
+    </div>
+    </div>
+
+    <div class="accdiv">
+      <p class="acctexts one">WEATHER</p>
+      <h1 class="acchd">Forecast for Villard-de-Lans</h1>
+      <p class="acctexts two">Denise and Tim welcome you to their Villard-de-Lans accommodation in<br>the Vercors massif. With family or friends, you live in the heart of the<br>village, in a cozy apartment or close to the cross-country ski slopes, in a<br>spacious house.</p>
+    </div>
+
+    <div class="firstwhitediv2">
+    <div class="footer">
+      <img class="fhdimg" src="./files/logo2.svg">
+      <div class="fsdiv">
+        <div class="mail">
+          <img class="fimg" src="./files/email.png" alt="">
+          <p>anshadrazakk@gmail.com</p>
+        </div>
+        <div class="mail">
+          <p>THE HOUSE<br>
+            2655 Route de Bois Barbu
+            38250 Villard-de-Lans</p>
+        </div>
+        <div class="mail">
+          <p>THE APARTMENT<br>
+            20 Route des Clots
+38250 Villard-de-Lans</p>
+        </div>
+        <div class="mail">
+          <img class="fimg" src="./files/phone.png" alt="">
+          <p>+91 974591 4832</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <div class="dgdiv">
+        <div></div>
+        <div class="dgtext">&copy; 2024 Anshad Razak &copy; All rights reserved</div>
+        <div></div>
+        <div class="dgcap">
+          <p>Privacy Policy</p>
+          <p>Legal Notices</p>
+          <p>General terms of sale</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

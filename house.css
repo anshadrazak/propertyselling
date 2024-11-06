@@ -1,0 +1,79 @@
+.house{
+    animation: none;
+    animation-duration: 0s;
+
+    color: black;
+}
+
+.menu.house{
+    color: black;
+}
+
+.lhouse{
+    width: 150px;
+    /* border: 2px green solid; */
+}
+
+.hl{
+    width: 100%;
+}
+
+.hwhitediv{
+    padding: 10px;
+}
+
+.hsdiv{
+    display: flex;
+    height: 75vh;
+    gap: 20px;
+}
+
+.hmapdiv{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #907c78;
+    width: 30%;
+}
+.himgdiv{
+    border-radius: 20px;
+    background-image: url(./files/himg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+}
+.himgdiv2{
+    border-radius: 20px;
+    background-image: url(./files/himg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+}
+.hmapsdiv{
+    margin-left: 50%;
+    translate: -50%;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 2px green solid; */
+    width: 87%;
+    height: 100%;
+}
+
+.hmapimg{
+    border-radius: 20px;
+    height: 70%;
+    width: 100%;
+}
+
+.hmhd{
+    margin: 0px;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+}
+
+.hmp{
+    color: white;
+    font-size: 18px;
+    font-family: "Afacad Flux", serif;
+}

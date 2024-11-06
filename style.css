@@ -1,0 +1,506 @@
+.firstwhitediv{
+    background-color: #f6f4ef;
+    height: 97vh;
+    margin: 10px;
+    animation-name: wdanim;
+    animation-duration: 4s;
+}
+
+.imagediv{
+    
+    border-radius: 18px;
+    background-image: url(./files/bg.jpg);
+    background-position: -10%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    
+    animation-name: introanim;
+    animation-duration: 4s;
+}
+
+@keyframes wdanim {
+    0%{
+        padding-top: 25vh;
+    }
+    50%{
+        padding-top: 25vh;
+    }
+    100%{
+        padding-top: 0vh;
+    }
+}
+
+@keyframes fadinganim {
+    0%{
+        opacity: 0%;
+
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes introanim {
+    0%{
+        margin-left: 50%;
+        translate: -50%;
+        width: 0%;
+        height: 50%;
+    }
+    50%{
+        margin-left: 50%;
+        translate: -50%;
+        width: 70%;
+        height: 50%;
+        
+        
+    }
+
+    100%{
+        margin-left: 50%;
+        translate: -50%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+body{
+    background-color: #f6f4ef;
+    margin: 0px;
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menus{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.rbtn{
+    background-color: #395353;
+    border: none;
+    padding: 20px 40px 20px 40px;
+    border-radius: 15px;
+    color: white;
+    font-family: "Afacad Flux", serif;
+    font-size: 20px;
+}
+
+
+
+.header{
+    animation-name: fadinganim;
+    animation-duration: 4s;
+    padding-top: 30px;
+    color: white;
+    font-family: "Afacad Flux", serif;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr 1.5fr 0fr;
+    /* border: 1px black solid; */
+    width: 90%;
+    margin-left: 50%;
+    translate: -50%;
+}
+
+.mnhd{
+    animation-name: fadinganim;
+    animation-duration: 4s;
+    margin: 13%;
+    text-align: center;
+}
+
+.contact{
+    font-size: 20px;
+}
+
+.mnhding{
+    color: white;
+    font-size: 60px;
+    
+    margin: 0px;
+    
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.buttondiv{
+    width: fit-content;
+    /* border: 1px black solid; */
+}
+
+.accdiv{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.acctexts {
+    font-family: "Afacad Flux", serif;
+    
+}
+
+.two{
+    color: #395353;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.acchd{
+    font-family: "Playfair Display", serif;
+    color: #395353;
+    font-size: 40px;
+}
+
+.rose{
+    width: 150px;
+    /* border: 1px solid yellow; */
+    margin: 0px;
+    margin-top: 3px;
+}
+
+
+
+.carousel-container {
+    margin-top: 50px;
+    width: 99%;
+    height: 90vh;
+    /* border: 2px rgb(241, 58, 58) solid; */
+    margin-left: 50%;
+    translate: -50%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    transform: translateY(-50%);
+    background-color: rgba(164, 164, 164, 0.259);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 50%;
+  }
+
+  .carousel-button.left {
+    left: 10px;
+  }
+
+  .carousel-button.right {
+    right: 10px;
+  }
+
+  .himgctr{
+    margin-top: 15px;
+    margin-left: 50%;
+    translate: -50%;
+    width: 99%;
+    /* border: 10px black solid; */
+    display: flex;
+    gap: 10px;
+    height: 55vh;
+  }
+
+  .himg.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+    border-radius: 10px;
+    background-image: url(./files/himg1.jpg);
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    transition: 0.5s;
+    padding-bottom: 40px;
+  }
+  .himg.two{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 10px;
+    background-image: url(./files/himg2.jpg);
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    transition: 0.5s;
+    padding-bottom: 40px;
+  }
+
+  @keyframes colorchange {
+    0%{
+        background-image:  url(./files/himg2.jpg);
+    }
+    100%{
+        background-image: none;
+    }
+    
+  }
+
+  .himg.one:hover{
+    width: 60%;
+    background-image: none;
+    background-color: #907c78;
+  }
+  .himg.two:hover{
+    width: 60%;
+    background-image: none;
+    background-color: #3f6f7d;
+  }
+
+  .himgtxt{
+    margin: 0px;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    margin-left: 50px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .himgp{
+    margin-top: 100px;
+    display: none;
+    visibility: hidden;
+    margin: 0px;
+    font-family: "Afacad Flux", serif;
+    font-size: 20px;
+    margin-left: 50px;
+    color: white;
+  }
+
+  .features{
+    width: 80%;
+    text-align: center;
+    margin-left: 50%;
+    translate: -50%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 100px;
+  }
+
+
+.cardimg{
+    width:70px;
+    height: 70px;
+}
+
+.cardhd{
+    color: #395353;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.cardp{
+    color: #395353;
+    font-family: "Afacad Flux", serif;
+    font-size: 20px;
+}
+
+.footer{
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    height: fit-content;
+    /* border: 5px black solid; */
+    background-color: #395353;
+
+}
+
+.fhdimg{
+    margin-top: 40px;
+    margin-left: 50%;
+    translate: -50%;
+    width: 150px;
+}
+
+.fsdiv{
+    margin-top: 40px;
+    margin-left: 50%;
+    translate: -50%;
+    display: flex;
+    /* border: 2px black solid; */
+    gap: 10%;
+    width: 80%;
+}
+
+.mail{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width: 100vw;
+    color: white;
+    /* border: 2px red solid; */
+    font-family: "Afacad Flux", serif;
+}
+
+.fimg{
+    width: 50px;
+}
+
+.firstwhitediv2{
+    background-color: #f6f4ef;
+    height: fit-content;
+    margin: 10px;
+}
+
+.dgdiv{
+    font-family: "Afacad Flux", serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+    background-color: #203030;
+    padding: 5px;
+    color: white;
+    
+}
+
+.dgtext{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dgcap{
+    display: flex;
+    gap: 20px;
+}
+
+.greendiv{
+    padding-top: 70px;
+    background-color: #395353;
+    border-radius: 20px;
+    padding-bottom: 70px;
+}
+
+.locdiv{
+    margin-left: 50%;
+    translate: -50%;
+    /* border: 2px red solid; */
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.mapimg{
+    width: 100%;
+    height: 100%;
+}
+
+.mapdiv{
+    /* border: 2px green solid; */
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.lp{
+    margin: 0px;
+    font-family:"Afacad Flux", serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.lp2{
+    margin: 0px;
+    font-family:"Afacad Flux", serif;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.textsdiv{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px yellow solid; */
+gap: 0px;
+    width: 50%;
+}
+
+.lhd{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.lcubtn{
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    font-family: "Afacad Flux", serif;
+    font-weight: 600;
+    color: #395353;
+}
+
+.imgsectiondiv{
+    margin-top: 50px;
+    display: flex;
+    width: 125vw;
+    margin-left: -12vw;
+    gap: 20px;
+    
+  
+}
+
+.imgs{
+    width: 100%;
+    height: 100%;
+}
+
+.imgsections{
+    border-radius: 20px;
+    overflow: hidden;
+    width: 24%;
+    /* border: 1px yellow solid; */
+}
+
+.isdiv{
+    /* border: 3px green solid; */
+    overflow: hidden;
+}
+

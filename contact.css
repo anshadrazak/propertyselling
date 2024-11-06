@@ -1,0 +1,73 @@
+.cmhd{
+    /* border: 2px green solid; */
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 50%;
+    translate: -50%;
+    color: #395353;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+.apartment{
+    animation: none;
+    animation-duration: 0s;
+
+    color: black;
+}
+
+.menu.apartment{
+    color: black;
+}
+
+.lapartment{
+    width: 150px;
+    /* border: 2px green solid; */
+}
+
+.formdiv{
+    /* border: 2px green solid; */
+    width: 50%;
+    margin-left: 50%;
+    translate: -50%;
+
+}
+
+.fhd{
+    
+    font-family: "Afacad Flux", serif;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.big{
+    
+    font-size: 25px;
+}
+
+.small{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.formsubdiv{
+    display: flex;
+    gap: 20px;
+}
+
+.inpp{
+    border: 0px;
+    margin: 0px;
+    height: 40px;
+    border-radius: 5px;
+    width: 99%;
+}
+
+.fleft{
+    /* border: 2px green solid; */
+    width: 50%;
+}
+.fright{
+    width: 50%;
+    /* border: 2px yellow solid; */
+}
