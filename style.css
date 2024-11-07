@@ -87,6 +87,7 @@ a{
     gap: 20px;
 }
 
+
 .rbtn{
     background-color: #395353;
     border: none;
@@ -137,11 +138,21 @@ a{
     text-align: center;
 }
 
+a{
+    z-index: 100;
+    cursor: pointer;
+}
+
 .buttondiv{
+    z-index: 100;
     width: fit-content;
     /* border: 1px black solid; */
 }
 
+.buttondiv:hover{
+    cursor: pointer;
+    /* border: 1px black solid; */
+}
 .accdiv{
     margin-top: 50px;
     text-align: center;
@@ -231,6 +242,7 @@ a{
     gap: 10px;
     height: 55vh;
   }
+
 
   .himg.one{
     display: flex;

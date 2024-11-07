@@ -7,12 +7,18 @@
     gap: 20px;
 }
 
+
 .rsdiv{
+    margin-bottom: 100px;
     text-align: center;
     height: 30vh;
     border-radius: 20px;
     width: 50%;
     border: 1px solid #b99f5a;
+}
+
+.sendbtn{
+
 }
 
 .rshd{
@@ -37,4 +43,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.rssdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sendbtn2{
+    font-family: "Afacad Flux", serif;
+    font-size: 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    width: 35%;
+    background-color: #395353;
+    color: white;
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+.sendbtn2:hover{
+    cursor: pointer;
 }

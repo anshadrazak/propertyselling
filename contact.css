@@ -102,3 +102,10 @@ select{
     margin-bottom: 100px;
 }
 
+.sendbtn:hover{
+    cursor: pointer;
+}
+
+.requiredstar{
+    color: #b99f5a;
+}
