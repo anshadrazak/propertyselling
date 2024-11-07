@@ -44,22 +44,64 @@
         <form action="">
             <div class="formsubdiv">
                 <div class="fleft">
-                    <p class="fhd small">Name</p>
-                    <input class="inpp" type="text" placeholder="Name">
+                    <p class="fhd small">Name *</p>
+                    <input id="name" class="inpp" type="text" required placeholder="Name">
 
-                    <p class="fhd small">Email</p>
-                    <input class="inpp" type="email" placeholder="Email">
+                    <p class="fhd small">Email *</p>
+                    <input id="email" class="inpp" type="email" required placeholder="Email">
                 </div>
                 <div class="fright">
-                    <p class="fhd small">Forename</p>
-                    <input class="inpp" type="text" placeholder="Name">
+                    <p class="fhd small">Forename *</p>
+                    <input id="forename" class="inpp" type="text" required placeholder="Forename">
 
-                    <p class="fhd small">Phone</p>
-                    <input class="inpp" type="tel" placeholder="Email">
+                    <p class="fhd small">Phone *</p>
+                    <input id="phone" class="inpp" type="tel" required placeholder="Phone">
                 </div>
             </div>
+            <p class="fhd big">Hosting *</p>
+
+            <select required id="hosting">
+              <option>HOUSE</option>
+              <option>APARTMENT</option>
+            </select>
+
+            <p class="fhd big">Your Request</p>
+            <textarea class="ta"></textarea>
+
+            <div class="req"><input id="checkbox" type="checkbox"><p class="fhd small">By sending this form, you agree to the processing of your personal data in order to process your request. More information about our privacy policy.</p></div>
+
+            <button id="sendbtn" class="sendbtn" type="submit">SEND</button>
         </form>
     </div>
+
+    <script>
+      checkbox = document.getElementById("checkbox")
+      button = document.getElementById("sendbtn")
+      checkbox.addEventListener('change', function(){
+        this.checked ? this.setAttribute('value', 'on') : this.setAttribute('value', 'off');
+});
+    if (checkbox.value == "on"){
+      button.disabled = false;
+    }
+    else{
+      button.disabled = true;
+    }
+    </script>
+
+    <!-- <script>
+      function check(){
+
+        name = document.getElementById("name").value;
+        email = document.getElementById("email").value;
+        forename = document.getElementById("forename").value;
+        phone = document.getElementById("phone").value;
+        hosting = document.getElementById("hosting").value;
+
+        if (name == "" | forename == "" | email == "" | phone == "" | hosting == ""){
+          alert("Fill all the Fields")
+        }
+      }
+    </script> -->
 
     <div class="firstwhitediv2">
         <div class="footer">

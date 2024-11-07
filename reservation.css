@@ -1,0 +1,40 @@
+.rmdiv{
+    /* border: 2px green solid; */
+    width: 75%;
+    margin-left: 50%;
+    translate: -50%;
+    display: flex;
+    gap: 20px;
+}
+
+.rsdiv{
+    text-align: center;
+    height: 30vh;
+    border-radius: 20px;
+    width: 50%;
+    border: 1px solid #b99f5a;
+}
+
+.rshd{
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #395353;
+
+}
+
+.inpppdiv{
+    font-family: "Afacad Flux", serif;
+    font-size: 20px;
+}
+
+.dateinp{
+    height: 30px;
+    font-family: "Afacad Flux", serif;
+}
+
+.ies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
