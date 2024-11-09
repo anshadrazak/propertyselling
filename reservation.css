@@ -11,7 +11,7 @@
 .rsdiv{
     margin-bottom: 100px;
     text-align: center;
-    height: 30vh;
+    height: fit-content;
     border-radius: 20px;
     width: 50%;
     border: 1px solid #b99f5a;
@@ -35,7 +35,8 @@
 }
 
 .dateinp{
-    height: 30px;
+    border: none;
+    height: 40px;
     font-family: "Afacad Flux", serif;
 }
 
@@ -62,7 +63,7 @@
     background-color: #395353;
     color: white;
     height: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .sendbtn2:hover{
