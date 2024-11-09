@@ -14,53 +14,12 @@
 </head>
 
 <body>
+  <H1 id="loading" class='loading'>loading</H1>
 
-  <script>
-
-    // window.addEventListener("resize", function(){
-    //   document.write("Dont play :)")
-    // })
-
-function makevisible(){
-    himgp1 = document.getElementById("himgp1");
-
-
-
-    himgp1.style.visibility = "visible";
-    himgp1.style.display = "flex";
-
-    
-}
-function makeinvisible(){
-    himgp1 = document.getElementById("himgp1");
-
-    himgp1.style.visibility = "hidden";
-    himgp1.style.display = "none";
-
-    
-}
-
-function makevisible2(){
-    himgp1 = document.getElementById("himgp2");
-
-
-
-    himgp1.style.visibility = "visible";
-    himgp1.style.display = "flex";
-
-    
-}
-function makeinvisible2(){
-    himgp1 = document.getElementById("himgp2");
-
-    himgp1.style.visibility = "hidden";
-    himgp1.style.display = "none";
-
-    
-}
-  </script>
+  <div id="wholecont" class="wholecont">
 
     <div class="firstwhitediv">
+      
         <div class="imagediv">
             <div class="header">
                 <div class="menus">
@@ -252,5 +211,39 @@ function makeinvisible2(){
     </div>
     
   </div>
+</div>
 </body>
+
+<script>
+  function makevisible(){
+      const himgp1 = document.getElementById("himgp1");
+      himgp1.style.visibility = "visible";
+      himgp1.style.display = "flex";
+  }
+  function makeinvisible(){
+      const himgp1 = document.getElementById("himgp1");
+      himgp1.style.visibility = "hidden";
+      himgp1.style.display = "none";
+  }
+  function makevisible2(){
+      const himgp2 = document.getElementById("himgp2");
+      himgp2.style.visibility = "visible";
+      himgp2.style.display = "flex";
+  }
+  function makeinvisible2(){
+      const himgp2 = document.getElementById("himgp2");
+      himgp2.style.visibility = "hidden";
+      himgp2.style.display = "none";
+  }
+  
+  const loading = document.getElementById("loading");
+  const wholecont = document.getElementById("wholecont");
+  
+  
+  window.addEventListener("load", function() {
+      loading.style.display = "none";
+      wholecont.style.display = "block";
+  });
+  </script>
+
 </html>

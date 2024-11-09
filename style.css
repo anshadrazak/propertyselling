@@ -517,3 +517,18 @@ gap: 0px;
     overflow: hidden;
 }
 
+.loading{
+    font-size: 50px;
+    font-family: "Afacad Flux", serif;
+    position: absolute;
+    z-index: 100;
+    margin-left: 50%;
+    margin-top: 50vh;
+    translate: -50% -50%;
+    color: rgb(0, 0, 0);
+
+}
+
+.wholecont{
+    display: none;
+}
