@@ -19,7 +19,7 @@
     <div class="header apartment">
         <div class="menus apartment">
             <a href="house.html"><p class="menu house">HOUSE</p> </a> 
-            <a href="apartment.html"><p class="menu house">APARTMENT</p> </a>                                                                                      </p>
+            <a href="apartment.html"><p class="menu house">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APARTMENT</p> </a>                                                                                      </p>
             <a href="contact.html"><p class="menu house">CONTACT</p> </a>                                                                                      </p>
                                                                                                </p>
             
@@ -41,32 +41,32 @@
 
     <div class="formdiv">
         <p class="fhd big">Personal information</p>
-        <form action="">
+        <form action="https://formspree.io/f/xgvekbrj"  method="POST">
             <div class="formsubdiv">
                 <div class="fleft">
                     <p class="fhd small">Name <span class="requiredstar">*</span></p>
-                    <input id="name" class="inpp" type="text" required placeholder="Name">
+                    <input id="name" class="inpp" name="name" type="text" required placeholder="Name">
 
                     <p class="fhd small">Email <span class="requiredstar">*</span></p>
-                    <input id="email" class="inpp" type="email" required placeholder="Email">
+                    <input id="email" class="inpp" name="email" type="email" required placeholder="Email">
                 </div>
                 <div class="fright">
                     <p class="fhd small">Forename <span class="requiredstar">*</span></p>
-                    <input id="forename" class="inpp" type="text" required placeholder="Forename">
+                    <input id="forename" name="forename" class="inpp"  type="text" required placeholder="Forename">
 
                     <p class="fhd small">Phone <span class="requiredstar">*</span></p>
-                    <input id="phone" class="inpp" type="tel" required placeholder="Phone">
+                    <input id="phone" class="inpp" name="phone" type="tel" required placeholder="Phone">
                 </div>
             </div>
             <p class="fhd big">Hosting <span class="requiredstar">*</span></p>
 
-            <select required id="hosting">
+            <select name="hosting"  required id="hosting">
               <option>HOUSE</option>
               <option>APARTMENT</option>
             </select>
 
             <p class="fhd big">Your Request</p>
-            <textarea class="ta"></textarea>
+            <textarea name="ta" class="ta"></textarea>
 
             <div class="req"><input id="checkbox" type="checkbox"><p class="fhd small">By sending this form, you agree to the processing of your personal data in order to process your request. More information about our privacy policy.</p></div>
 
@@ -75,17 +75,25 @@
     </div>
 
     <script>
-      checkbox = document.getElementById("checkbox")
-      button = document.getElementById("sendbtn")
-      checkbox.addEventListener('change', function(){
-        this.checked ? this.setAttribute('value', 'on') : this.setAttribute('value', 'off');
-});
-    if (checkbox.value == "on"){
-      button.disabled = false;
-    }
-    else{
-      button.disabled = true;
-    }
+      var checkbox = document.getElementById("checkbox");
+      var button = document.getElementById("sendbtn");
+
+      button.disabled = !checkbox.checked;
+
+      if (button.disabled == true) {
+        button.style.backgroundColor = "grey";
+      }
+      
+
+      checkbox.addEventListener('change', function() {
+        button.disabled = !checkbox.checked;
+        if (button.disabled == true) {
+        button.style.backgroundColor = "grey";
+      }
+      else{
+        button.style.backgroundColor = '#395353';
+      }
+      });
     </script>
 
     <!-- <script>

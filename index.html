@@ -17,6 +17,10 @@
 
   <script>
 
+    // window.addEventListener("resize", function(){
+    //   document.write("Dont play :)")
+    // })
+
 function makevisible(){
     himgp1 = document.getElementById("himgp1");
 
@@ -54,36 +58,6 @@ function makeinvisible2(){
 
     
 }
-        
-    const slideContainer = document.querySelector('.carousel-slide');
-    const slides = document.querySelectorAll('.carousel-slide img');
-    let currentIndex = 0;
-
-    function updateSlidePosition() {
-      const slideWidth = slides[0].clientWidth;
-      slideContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    }
-
-    function nextSlide() {
-      if (currentIndex < slides.length - 1) {
-        currentIndex++;
-      } else {
-        currentIndex = 0;
-      }
-      updateSlidePosition();
-    }
-
-    function prevSlide() {
-      if (currentIndex > 0) {
-        currentIndex--;
-      } else {
-        currentIndex = slides.length - 1;
-      }
-      updateSlidePosition();
-    }
-
-    
-    window.addEventListener('resize', updateSlidePosition);
   </script>
 
     <div class="firstwhitediv">
@@ -91,7 +65,7 @@ function makeinvisible2(){
             <div class="header">
                 <div class="menus">
                     <a href="house.html"><p class="menu">HOUSE</p> </a> 
-                    <a href="apartment.html"><p class="menu">APARTMENT</p> </a>                                                                                      </p>
+                    <a href="apartment.html"><p class="menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;APARTMENT</p></a>                                                                                      </p>
                     <a href="contact.html"><p class="menu">CONTACT</p> </a>                                                                                      </p>
                                                                                                        </p>
                     
