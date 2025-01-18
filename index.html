@@ -54,14 +54,14 @@
     </div>
     <div class="carousel-container">
         <div class="carousel-slide">
-          <img src="./files/slider1.jpg" alt="Slide 1">
-
-
-          
-          
+            <img src="./files/slider1.jpg" alt="Slide 1">
+            <img src="./files/slider2.jpg" alt="Slide 2">
+            <img src="./files/slider3.jpg" alt="Slide 3">
+            <img src="./files/slider4.jpg" alt="Slide 4">
         </div>
-            <button class="carousel-button left" >&#10094;</button>
-            <button class="carousel-button right">&#10095;</button>
+        <button class="carousel-button left">&#10094;</button>
+        <button class="carousel-button right">&#10095;</button>
+        <div class="carousel-dots"></div>
     </div>
 
       
@@ -238,6 +238,58 @@
   window.addEventListener("load", function() {
       loading.style.display = "none";
       wholecont.style.display = "block";
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+      const carouselSlide = document.querySelector('.carousel-slide');
+      const images = document.querySelectorAll('.carousel-slide img');
+      const prevBtn = document.querySelector('.carousel-button.left');
+      const nextBtn = document.querySelector('.carousel-button.right');
+      const dotsContainer = document.querySelector('.carousel-dots');
+      
+      let currentIndex = 0;
+      
+      // Create dot indicators
+      images.forEach((_, index) => {
+          const dot = document.createElement('div');
+          dot.classList.add('carousel-dot');
+          if (index === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => {
+              currentIndex = index;
+              updateCarousel();
+              updateDots();
+          });
+          dotsContainer.appendChild(dot);
+      });
+      
+      const dots = document.querySelectorAll('.carousel-dot');
+      
+      // Set initial positions of images
+      images.forEach((img, index) => {
+          img.style.position = 'absolute';
+          img.style.left = `${index * 100}%`;
+      });
+      
+      function updateCarousel() {
+          carouselSlide.style.transform = `translateX(-${currentIndex * 100}%)`;
+          updateDots();
+      }
+      
+      function updateDots() {
+          dots.forEach((dot, index) => {
+              dot.classList.toggle('active', index === currentIndex);
+          });
+      }
+      
+      nextBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateCarousel();
+      });
+      
+      prevBtn.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          updateCarousel();
+      });
   });
   </script>
 
