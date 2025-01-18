@@ -209,6 +209,11 @@ a{
     object-fit: cover;
 }
 
+/* Re-enable the navigation buttons and dots */
+.carousel-button, .carousel-dots {
+    display: flex;
+}
+
 .carousel-button {
     position: absolute;
     top: 50%;
